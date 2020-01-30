@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<!--<script src="jquery.js"></script>-->
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="form.js"></script>
+
+<!--<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>-->
+</head>
+<body>
+    
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">register</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="login.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="chandru\Downloads\login.jpeg" height="80" width="25" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="lg1" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="lg2" required>
+        
+      <button onclick="loginPage()" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<div id="id02" class="modal">
+  
+    <form class="modal-content animate" onsubmit="index.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="\chandru\Downloads\login.jpeg" height="80" width="25" alt="Avatar" class="avatar">
+      </div>
+  
+     <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" id="rg1" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="rg2" required>
+
+        <label for="psw"><b>DOB</b></label>
+        <input type="date" placeholder="Enter DOB" id="rg4" required>
+
+        <label for="psw"><b>Age</b></label>
+        <input type="number" placeholder="Enter Age" id="rg5" required>
+
+        <label for="psw"><b>Contact Number</b></label>
+        <input type="number" placeholder="Enter Contact Number" id="rg6" required>
+
+        
+        <label for="psw"><b>E-mail Id</b></label>
+        <input type="email" placeholder="Enter E-mail Id" id="rg7" required>
+
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <!--<input type="submit" value="submit">-->
+        <button type="button" id="register">Register</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+      </div>
+    </form>
+  </div>
+  <div id="register_output">
+
+  </div>
+  <script>
+
+  </script>
+</body>
